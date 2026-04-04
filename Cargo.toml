@@ -1,0 +1,26 @@
+[package]
+name = "arka"
+version = "0.1.0"
+edition = "2021"
+description = "Rust AI agent SDK for blockchain — chain-agnostic wallets, DEX interaction, MPP payments, on-chain state reading"
+license = "MIT"
+repository = "https://github.com/kcolbchain/arka"
+keywords = ["blockchain", "ai-agents", "web3", "mpp", "defi"]
+categories = ["cryptography::cryptocurrencies"]
+
+[dependencies]
+alloy = { version = "1", features = ["full"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+reqwest = { version = "0.12", features = ["json"] }
+hex = "0.4"
+rand = "0.8"
+async-trait = "0.1"
+url = "2"
+
+[dev-dependencies]
+tokio-test = "0.4"
